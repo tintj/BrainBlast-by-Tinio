@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrainBlast by Tinio</title>
+  <link rel="stylesheet" href="style.css"> <!-- Linking the CSS file -->
+</head>
+<body>
+  <header>
+    <h1>BrainBlast by Tinio</h1>
+  </header>
+  <div class="container">
+    <h2>Select Difficulty</h2>
+    <div class="difficulty-buttons">
+      <button>Easy</button>
+      <button>Medium</button>
+      <button>Hard</button>
+      <button>Expert</button>
+    </div>
+    <form id="quizForm" style="display:none;">
+      <div id="quizQuestions"></div>
+      <div class="hints">
+        <button type="button">50:50 Hint</button>
+        <button type="button">Switch Question</button>
+      </div>
+      <button type="button">Submit</button>
+    </form>
+    <div class="result" id="result"></div>
+    <div id="nextButtons" style="display:none;">
+      <button>Play</button>
+      <button>Pass</button>
+    </div>
+  </div>
+  <audio id="correctSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+  <audio id="wrongSound" src="https://www.soundjay.com/button/beep-10.wav"></audio>
+  <script src="script.js"></script> <!-- Linking the JavaScript file -->
+</body>
+</html>
